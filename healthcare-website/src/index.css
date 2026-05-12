@@ -1,0 +1,44 @@
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  overflow-x: hidden;
+}
+
+.gradient-hero {
+  background:
+    linear-gradient(
+      to right,
+      rgba(240,253,250,0.95),
+      rgba(255,255,255,0.92)
+    );
+}
+
+.card-hover {
+  transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+}
+
+.transition-smooth {
+  transition: all 0.4s ease;
+}
+
+.glass {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(14px);
+}
+
+.hero-shadow {
+  box-shadow:
+    0 20px 50px rgba(15, 118, 110, 0.15);
+}
